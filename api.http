@@ -1,0 +1,25 @@
+### Create Book
+POST http://localhost:8000/books
+Accept: application/json
+Content-Type: application/json
+
+{
+    "title" : "Design Pattern With Java",
+    "price" : 90000,
+    "publish_year": 2022
+}
+
+### GET Root
+GET http://localhost:8000
+
+### Get Bio
+GET http://localhost:8000/bio
+Accept: application/json
+
+### Get Books By Id
+GET http://localhost:8000/books/1
+Accept: application/json
+
+### Query Books By Title
+GET http://localhost:8000/books/search?title=Judul Buku
+Accept: application/json
